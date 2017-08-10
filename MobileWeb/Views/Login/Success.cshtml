@@ -1,0 +1,19 @@
+﻿@model MobileWeb.Models.LoginModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Success</title>
+</head>
+<body>
+    <div> 
+        <h1>You've successfully submitted the login datas</h1><hr/><br />
+        <h1>@Html.Encode(ViewData["message"])</h1>
+    </div>
+</body>
+</html>
