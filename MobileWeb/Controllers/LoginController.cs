@@ -91,8 +91,8 @@ namespace MobileWeb.Controllers
             loginModel.user_phone = Request["username"];
             loginModel.pass = Request["password"];
             loginModel.device_type = Request["device"];
-            loginModel.device_token = "GWY7N16A31000916";
-            string Url = "http://120.24.42.134:8080/api/User/UserLogin";
+            loginModel.device_token = "GWY7N16A31000000";
+            string Url = "http://localhost:8080/api/User/UserLogin";
             string content = string.Format("in_date={0}&interface_id={1}&user_phone={2}&pass={3}&device_type={4}&device_token={5}", loginModel.in_date, loginModel.interface_id, loginModel.user_phone, loginModel.pass, loginModel.device_type, loginModel.device_token);
             string result = HttpPost(Url, content);
             //Trace.WriteLine("################  " + result + "  @@@@@@@@@@@@@@@@@@@@@@");
